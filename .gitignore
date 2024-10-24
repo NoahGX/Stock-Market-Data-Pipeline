@@ -1,0 +1,18 @@
+# Environment variables
+config/.env
+
+# Data files
+data/
+
+# Virtual environments
+stock-env/
+
+# S3-related credentials
+.aws/
+
+# Kafka configuration files or logs
+*.properties
+*.log
+
+# System files
+.DS_Store
