@@ -32,7 +32,7 @@ This project demonstrates a real-time data streaming pipeline using **Apache Kaf
 ### B. Installing and Configuring Kafka
 1. **Download and Extract Kafka**
 - Navigate to the `scripts` directory on your EC2 instance and execute:
-    ```bash
+    ```
     wget https://downloads.apache.org/kafka/3.3.1/kafka_2.12-3.3.1.tgz
     tar -xvf kafka_2.12-3.3.1.tgz
     ```
@@ -46,14 +46,14 @@ This project demonstrates a real-time data streaming pipeline using **Apache Kaf
 - Replace `<your_public_ip>` with the actual public IP address of your EC2 instance.
 
 3. **Start Zookeeper**
-    ```bash
+    ```
     cd kafka_2.12-3.3.1
     bin/zookeeper-server-start.sh config/zookeeper.properties
     ```
 
 4. **Start Kafka Broker**
 - Open a new terminal session to your EC2 instance and run:
-    ```bash
+    ```
     export KAFKA_HEAP_OPTS="-Xmx256M -Xms128M"
     cd kafka_2.12-3.3.1
     bin/kafka-server-start.sh config/server.properties
@@ -61,7 +61,7 @@ This project demonstrates a real-time data streaming pipeline using **Apache Kaf
 
 5. **Create a Kafka Topic**
 - In another terminal session:
-    ```bash
+    ```
     cd kafka_2.12-3.3.1
     bin/kafka-topics.sh --create --topic demo_test --bootstrap-server <your_public_ip>:9092 --replication-factor 1 --partitions 1
     ```
@@ -87,7 +87,7 @@ This project demonstrates a real-time data streaming pipeline using **Apache Kaf
 
 ### D. Running the Kafka Consumer
 1. **Install Dependencies**
-    ```bash
+    ```
     pip install kafka-python s3fs
     ```
 
