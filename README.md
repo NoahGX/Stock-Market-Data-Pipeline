@@ -1,7 +1,8 @@
 # Stock Market Data Pipeline
 
 ## Overview
-This project demonstrates a real-time data streaming pipeline using **Apache Kafka**, **Python**, and **Amazon S3**. The pipeline involves setting up Kafka and Zookeeper on an **Amazon EC2** instance, using a Kafka **Producer** to send data from a CSV file to a Kafka topic, using a Kafka **Consumer** to read data from the Kafka topic and write it to an **Amazon S3** bucket in JSON format.
+This project demonstrates a real-time data streaming pipeline using **Apache Kafka**, **Python**, and **Amazon S3**.
+The pipeline involves setting up Kafka and Zookeeper on an **Amazon EC2** instance, using a Kafka **Producer** to send data from a CSV file to a Kafka topic, using a Kafka **Consumer** to read data from the Kafka topic and write it to an **Amazon S3** bucket in JSON format.
 
 ## Features
 - **Kafka Setup Scripts**: Step-by-step instructions to install and configure Kafka and Zookeeper on an EC2 instance.
